@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+        #head{
+              display: flex;
+              justify-content: center;
+              background-color: hsl(0, 3%, 63%);
+          }
+          .ss{
+              margin-right: 10px;
+          }
+          #regist{
+              padding-top: 100px;
+              padding-bottom: 100px;
+              background-color: rgba(1, 200, 3, 0.8);
+              text-align: center;
+          }
+          @media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3){
+                 #head{
+                  display: block;
+                 }
+                }
+  </style>
+</head>
+<body>
+    <div style="padding-top: 20px;"><h3 style="text-align: center;">Nauryzbek Dias</h1></div>
+        <div id="head">
+            <div class="ss"><a  href="mm.html">Home</a></div>
+            <div class="ss"><a href="Services.html">Services</a></div>
+            <div class="ss"><a  href="Clients.html">Clients</a></div>
+            <div class="ss"><a  href="Recent.html">Recent work</a></div>
+            <div class="ss"><a href="Contacts.html">About us</a></div>
+        </div>
+        <br>
+        <div v-bind:style="vue" id="regist">
+            <label for="fname">First name: </label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="lname">Last name: </label>
+            <input type="text" id="lname" name="lname"><br><br>
+            <label for="lname1">Create login </label>
+            <input type="text" id="lname1" name="lname1"><br><br>
+            <label  for="lname2">Create password </label>
+            <input style="margin-right: 30px;" type="password" id="lname2" minlength="1" maxlength="9"><br><br>
+            <p>Choose your gender</p>
+            <input type="radio" name="gen" id="gen">
+            <label for="gen">Men</label>
+            <input type="radio" name="gen" id="gen1">
+            <label for="gen1">Women</label><br><br>
+            <p>Choose your Fav style or styles</p>
+            <input type="checkbox" name="n1" id="n">
+            <label for="n">Minimalistic</label>
+            <input type="checkbox" name="n1" id="n">
+            <label for="n">Fantastic</label>
+            <input type="checkbox" name="n1" id="n">
+            <label for="n">Pompous</label><br><br>
+            <input type="submit" value="Submit">
+        </div>
+        <script  src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+</body>
+</html>

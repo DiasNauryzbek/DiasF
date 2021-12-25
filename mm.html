@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+        #head{
+            display: flex;
+            justify-content: center;
+            background-color: hsl(0, 3%, 63%);
+        }
+        .ss{
+            margin-right: 10px;
+        }
+        .aa{
+            color: royalblue;
+            font-style: italic;
+        }
+        @media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3){
+                 #head{
+                  display: block;
+                  margin-top: 10px;
+                 }
+             
+        }
+        @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+            #head{
+                  display: block;
+                  margin-top: 10px;
+                 }
+        }
+    </style>
+    </head>
+    <body>
+        <input type="date" id="date1" name="dd"  min="2021-12-22" max="2021-12-31">
+        <div style="padding-top: 20px;"><h3 style="text-align: center;">Nauryzbek Dias</h1></div>
+            <div id="head">
+                <div class="ss"><a  href="mm.html">Home</a></div>
+                <div class="ss"><a href="Services.html">Services</a></div>
+                <div class="ss"><a  href="Clients.html">Clients</a></div>
+                <div class="ss"><a  href="Recent.html">Recent work</a></div>
+                <div class="ss"><a href="Contacts.html">About us</a></div>
+            </div>
+            <div>
+                <ul>
+                    <a class="aa" href="Login.html"><li>Login</li></a>
+                    <a class="aa" href="Regist.html"><li>Registration</li></a>
+                    <a href="main111.html"><li>Best works</li></a>
+                  </ul>
+            </div>
+            <div><img src="img1.jpg" alt="" width="500px" height="200px" style="margin-left: 600px; margin-top: 40px;"></div>
+            <div id="con">
+                <div><h1 style="text-align: center;">Who we <i>are</i></h1></div>
+                <div><p style="text-align: center;">At dsds, we believe that our solutions will soon become one of the biggest segments in the industry. We’ve only just <br> started, but we already know that every product we build requires hard-earned skills, dedication and a daring <br> attitude. Continue reading and learn all there is to know about the smart tech behind our successful Information <br><i> Technology Startup Company. </i></p></div>
+            </div>
+            <hr>
+            <br><br><br><br>
+            <div style="text-align: center;"><h3>Info</h3>
+            <p>200103153@stu.sdu.edu.kz</p>
+            </div>
+          <script>
+              var now = new Date();
+             var month = (now.getMonth() + 1);               
+             var day = now.getDate();
+             if (month < 10) 
+              month = "0" + month;
+             if (day < 10) 
+              day = "0" + day;
+            var today = now.getFullYear() + '-' + month + '-' + day;
+             document.getElementById('date1').value = today
+
+          </script>
+    </body>
+</html>
